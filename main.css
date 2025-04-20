@@ -11,3 +11,131 @@
 }
 
 /* Write your code below this */
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 100%;
+  padding: 26px 60px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 12px;
+
+}
+.navbar-items li a {
+  text-decoration: none; 
+  color: inherit;         
+  font-weight: inherit;   
+}
+.navbar-items li a:hover {
+  color: #52647E;      
+  cursor: pointer; 
+}
+
+.hero {
+  background-image: url('/images/hero.png');
+  height: 500px;
+  padding-top: 219px;
+  padding-left: 103px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 35px;
+  padding: 18px 50px;
+  background: #52647E;
+  color: white;
+  border-radius: 10px;
+}
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.journey {
+  background: #618379;
+  padding: 57px 0;
+
+}
+h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 57px;
+}
+.journey-list {
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-between;
+
+}
+.journey-card {
+  width: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 40px;
+  color:gray;
+}
+.journey-image {
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: black;
+}
+.goals p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.goals {
+  padding: 60px 20px;
+  background-color: #eef2f3; /* a soft contrasting background */
+  text-align: center;
+}
+
+.goals h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+footer {
+  background: #333232;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
