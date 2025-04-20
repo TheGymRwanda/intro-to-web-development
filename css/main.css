@@ -1,0 +1,118 @@
+/* Removes unwanted styling from the page */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  max-width: 100%;
+}
+
+.about, .goals{
+  padding: 150px 250px;
+  text-align: center;
+  font-size: 25px;
+}
+
+header {
+  padding-bottom: 15px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+/* Write your code below this */
+/* Styles for navbar */
+.navbar {
+  width: 100%;
+  padding: 26px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 12px;
+}
+
+
+.hero {
+  background-image: url('/images/hero.png');
+  height: 500px;
+  padding-top: 219px;
+  padding-left: 103px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 35px;
+  padding: 12px 30px;
+  background: #52647E;
+  color: white;
+  border-radius: 10px;
+}
+/* Styles for About me section */
+.about{
+  background: white;
+  
+}
+
+/* Styles for coding Jorney section */
+.journey {
+  background: #618379;
+  padding: 57px 0;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 57px;
+}
+
+.journey-list {
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-between;
+}
+
+.journey-card {
+  width: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 40px;
+  color:gray;
+}
+
+.journey-image {
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: black;
+}
+/* Styles for my-goals section */
+.goals {
+  background: #eeee;
+}
+
+
+/* Styles for page footer */
+footer {
+  background: #333232;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
