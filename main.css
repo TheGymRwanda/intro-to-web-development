@@ -1,7 +1,6 @@
 /* Removes unwanted styling from the page */
-*,
-*::before,
-*::after {
+*
+{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -10,4 +9,157 @@
   max-width: 100%;
 }
 
+body{
+  background-color: rgb(0, 0, 0);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
 /* Write your code below this */
+.Navbar{
+  background-color: white;
+  height: 90px;
+  width: 1512px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.Navbar img{
+    height: 28px;
+    width: 300px;
+}
+
+.Navbar > ul
+{
+  display: flex;
+  list-style-type: none;
+}
+
+.Navbar > ul > li
+{  
+  margin-right: 24px;
+  font-size: 16px;
+}
+.Navbar > ul > li > a
+{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Navbar > ul > li > a:hover
+{
+  background-color: blue;
+  color: whitesmoke;
+ 
+}
+
+.Hero
+{
+  background-image: url(./images/hero.png);
+  width: 1512px;
+  height: 508px;
+  background-position: center;
+  padding-top: 309px;
+  padding-left: 103px;
+
+}
+.Hero h1{
+  color: blue;
+}
+
+.Hero button{
+  background: rgba(82, 100, 126, 1);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px
+}
+.about-me, .goals
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 300px;
+  gap: 55px;
+  height: 388px;
+  width: 1512px;
+  background-color: white;
+}
+.about-me h3, .goals h3{
+  font-size: 32px;
+}
+.about-me p, .goals p{
+  font-size: 20px;
+}
+.goals
+{
+  background-color: rgba(217, 217, 217, 1);
+}
+
+
+
+.journey{
+  background: rgba(97, 131, 121, 1);
+  width: 1512px;
+  height: 555px;
+  padding: 40px;
+  align-items: center;
+
+}
+.journey-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.journey-content h3{
+  color: white;
+  font-size: 30px;
+}
+.journey-card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+ 
+}
+
+.journey-card
+{
+  background: white;
+  height: 345px;
+  width: 355px;
+  margin-right: 80px;
+  border-radius: 40px;
+  padding: 25px;
+
+}
+
+.journey-card img{
+  border-radius: 40px;
+  margin-bottom: 25px;
+}
+footer
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 1512px;
+  height: 100px;
+  background-color: rgba(51, 50, 50, 1);
+  color: white;
+  font-size: 15px;
+}

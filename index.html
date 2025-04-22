@@ -3,22 +3,75 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Learn - Get Started Today</title>
+  <title>Coding Journey TK</title>
   <meta name="description" content="Learn is a platform that offers free courses for everyone. Start learning today!" />
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
+  <main>
   <!-- Navbar section -->
+   <nav class="Navbar">
+      <img src="images/logo.png" alt="logo Image">
+      <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#goals">Goals</a></li>
+      </ul>
+   </nav>
 
   <!-- Hero section -->
+   <div class="Hero">
+    <div class="Hero-Content">
+    <h1>Hello, I'm <br/>KAYITSINGA Hertilan</h1>
+    <p>A web Developer</p>
+    <button mailto>Contact me</button>
+  </div>
+  </div>
+
+  <div id="about" class="about-me">
+    <h3>About Me</h3>
+    <p>I’m a passionate web developer dedicated to creating engaging and user-friendly websites. From the moment I started coding, I knew I wanted to build digital experiences that people love to use. I thrive on turning creative ideas into functional websites that make a difference.</p>
+  </div>
 
   <!-- Coding journey section -->
+   <div id="coding-journey" class="journey" onclick="changeBackgroundColor()">
+    <div class="journey-content">
+      <h3>Coding Journey</h3>
+      
+      <div class="journey-card-container">
+          <div id="intro" class="journey-card">
+            <img src="images/intro-to-web.png" alt="">
+            <h4>Into to Web Development</h4>
+            <span>Learned How to build <br/>Web HTML Projecs</span>
+          </div>
+          <div id="react" class="journey-card">
+            <img src="images/react.png" alt="">
+            <h4>React Development</h4>
+            <span>Learned how to build Single <br/>Page Application</span>
+          </div>
+          <div id="backend" class="journey-card">
+            <img src="images/backend.png" alt="">
+            <h4>Back-end Development</h4>
+            <span>Learned How to build Back-end <br/>services</span>
+          </div>
+      </div>
+    </div>
+   </div>
+
+   <div id="goals" class="goals">
+    <h3>My Goals</h3>
+    <p>I aspire to mentor and support other aspiring developers, sharing the knowledge and experience I’ve gained along the way. By fostering a collaborative and encouraging environment, I hope to help others achieve their own goals and grow in their careers. Building strong, supportive communities is important to me, as I believe we can achieve more together.</p>
+  </div>
 
   <!-- Footer section -->
-
-  <script src="./script.js"></script>
+   <footer>
+      <span>Website made by Hertilan 😎👊 &copy; <span id="year"></span> </span>
+   </footer>
+</main>
+  <script src="script.js">
+  </script>
 </body>
 
 </html>
