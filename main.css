@@ -11,3 +11,150 @@
 }
 
 /* Write your code below this */
+.navbar {
+  width: 100%;
+  padding: 26px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 12px;
+}
+
+
+.hero {
+  background-image: url('/images/hero.png');
+  height: 500px;
+  padding-top: 219px;
+  padding-left: 103px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 35px;
+  padding: 12px 30px;
+  background: #52647E;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+/* Journey */
+
+.journey {
+  background: #618379;
+  padding: 57px 0;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 57px;
+}
+
+.journey-list {
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-between;
+}
+
+.journey-card {
+  width: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 40px;
+  color:gray;
+}
+
+.journey-image {
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+
+/* footer */
+
+footer {
+  background: #333232;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+
+
+
+/* About Me Section */
+.about-me {
+  padding: 2rem;
+  background-color: #d0d74fd5;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Goals Section */
+.goals {
+  padding: 2rem;
+  background-color: #ac70ce;
+  text-align: center;
+}
+
+.goals h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.goals ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.goals li {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0.5rem 0;
+}
+ 
+/* 10. Navbar responsiveness */
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-items a{
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent element */
+  font-weight: bold; /* Optional: Makes the text bold */
+}
+
+.navbar-items a:hover {
+  color: #007BFF; /* Optional: Adds a hover effect */
+}
