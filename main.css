@@ -11,3 +11,15 @@
 }
 
 /* Write your code below this */
+.navbar {
+  width: 100%;
+  padding: 26px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 12px;
+}
