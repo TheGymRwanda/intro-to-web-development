@@ -1,13 +1,131 @@
-/* Removes unwanted styling from the page */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
+*{
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: none;
-  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'loto',sans-serif;
+}
+body{
+ background: #fff;
+ width: 100%;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Write your code below this */
+header .left-header{
+  padding: 10px;
+  width: 60%;
+  margin-top: 5px;
+}
+
+header .right-header{
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin-top: 5px;
+  padding: 15px 35px 15px 0px;
+}
+
+header .right-header a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #080808;
+  font-size: 15px;
+  font-weight: 400;
+  cursor:pointer;
+}
+
+/* hello container */
+
+.content-container{
+  background: url('images/hero.png');
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.content-container .content{
+  padding-left: 120px;
+  justify-content: flex-end;
+  position: absolute;
+  padding-top: 150px;
+  margin-left: 40px 0px 0px 0px;
+}
+
+.content-container .content h1{
+    font-size: 32px;
+    color: #080808;
+}
+
+.content-container .content button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  width: 60%;
+  padding: 5px;
+  margin-top: 60px;
+  background: #52647E;
+  color: #fff;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+/* my journey */
+
+.journey-container{
+  padding: 20px;
+  background: #618379;
+  height: 100px;
+  height: 300px;
+}
+.journey-container h2{
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.journey-box-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 30px 60px 60px 60px;
+}
+.journey-container .journey-box{
+  background: #fff;
+  padding: 15px;
+  height: 200px;
+  width: 70%;
+  border-radius: 12px;
+}
+
+.journey-container .journey-box img{
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.journey-container .journey-box h4{
+  margin-top: 5px;
+  color: #232222;
+}
+.journey-container .journey-box p{
+  font-size: 12px;
+  margin-top: 5px;
+  color: #3b3b3b;
+}
+
+
+footer{
+  height: 50px;
+  background: #333232;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+}
+footer p{
+  margin-top: 5px;
+  font-weight: 200;
+  color: #ccc;
+}
