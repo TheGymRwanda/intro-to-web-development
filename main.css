@@ -1,13 +1,123 @@
-/* Removes unwanted styling from the page */
-*,
-*::before,
-*::after {
+.navbar {
+  width: 100vw;
+  min-width: 100%;
+  background: #fff;
   box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   padding: 0;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: none;
-  max-width: 100%;
 }
 
-/* Write your code below this */
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 26px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 12px;
+}
+
+.hero {
+  background-image: url('/images/hero.png');
+  min-height: 240px;
+  padding-top: 100px;
+  padding-left: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 35px;
+  padding: 12px 30px;
+  background: #52647E;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.journey {
+  background: #618379;
+  padding: 100px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 57px;
+}
+
+.journey-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.journey-card {
+  width: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 40px;
+  color: gray;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.journey-image {
+  border-radius: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+footer {
+  background: #333232;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .journey {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .journey-list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .journey-card {
+    width: 90%;
+  }
+}
