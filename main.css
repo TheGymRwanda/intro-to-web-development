@@ -11,3 +11,31 @@
 }
 
 /* Write your code below this */
+.navbar {
+width: 100%;
+padding: 26px 60px;
+display: flex;
+justify-content: space-between;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 12px;
+
+}
+.hero {
+  background-image: url('images/hero.png');
+  height: 500px;
+  padding-top: 219px;
+  padding-left: 103px;
+
+}
+h1 {
+	font-size: 36px;
+  margin-bottom: 15px;
+}
+button {
+padding: 12px 30px;
+background: #52647E;
+color: white;
+}
