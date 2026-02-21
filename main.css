@@ -11,3 +11,43 @@
 }
 
 /* Write your code below this */
+.journey {
+background: #618379;
+padding: 57px 0; 
+}
+h2 {
+  color: white;
+  padding: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 57px;
+}
+.journey-list {
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-between;
+
+}
+.journey-card {
+  width: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 40px;
+  color:gray;
+
+}
+.journey-image {
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.h3 {
+font-weight: 500;
+font-size: 20px;
+color: black;
+margin-bottom: 12px;
+}
+
+.name {
+  background-color: blue;
+}
