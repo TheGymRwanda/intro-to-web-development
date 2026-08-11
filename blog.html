@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blog by Blaise - Articles on Web Development, Software Engineering, UI/UX Design, and Technical Learning"/>
+  <meta name="keywords" content="Blog, Web Development, Software Engineering, UI/UX, Java, JavaScript"/>
+  <meta name="author" content="Mushimiyumukiza Blaise"/>
+  <title>Blog | Blaise - Software Developer & Designer</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" type="image/png" href="./images/logo.png"/>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <img src="./images/logo.png" alt="Blaise Logo" class="logo"/>
+      
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#designs">Designs</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#journey">My Journey</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <button id="modeToggle" class="mode-btn">🌙</button>
+    </div>
+  </header>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="container">
+      <h1>My Blog</h1>
+      <p>Thoughts on web development, software engineering, and UX design</p>
+    </div>
+  </section>
+
+  <!-- BLOG FILTER -->
+  <section class="blog-posts-section">
+    <div class="container">
+      <div class="blog-filter">
+        <button class="blog-filter-btn active" data-filter="all">All Posts</button>
+        <button class="blog-filter-btn" data-filter="web">Web Development</button>
+        <button class="blog-filter-btn" data-filter="java">Java & Backend</button>
+        <button class="blog-filter-btn" data-filter="design">UI/UX Design</button>
+        <button class="blog-filter-btn" data-filter="learning">Learning</button>
+      </div>
+
+      <div class="blog-posts-grid" id="blogPostsGrid">
+        
+        <!-- Blog Post 1 -->
+        <article class="blog-post-card" data-category="web">
+          <div class="blog-post-image">
+            <img src="./images/intro-to-web.png" alt="Intro to Web Development"/>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-meta">
+              <span class="blog-date">March 15, 2026</span>
+              <span class="blog-category">Web Development</span>
+            </div>
+            <h2><a href="blog-post-1.html">Getting Started with Responsive Web Design</a></h2>
+            <p class="blog-excerpt">
+              Learn the fundamentals of responsive web design and how to create websites that look great on all devices. 
+              In this comprehensive guide, we'll explore CSS media queries, flexible grids, and best practices...
+            </p>
+            <div class="blog-read-more">
+              <a href="blog-post-1.html" class="read-more-btn">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-post-card" data-category="java">
+          <div class="blog-post-image">
+            <img src="./images/backend.png" alt="Java OOP"/>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-meta">
+              <span class="blog-date">March 10, 2026</span>
+              <span class="blog-category">Java & Backend</span>
+            </div>
+            <h2><a href="blog-post-2.html">Object-Oriented Programming in Java: A Beginner's Guide</a></h2>
+            <p class="blog-excerpt">
+              Dive deep into the world of Object-Oriented Programming (OOP) with Java. This post covers classes, objects, 
+              inheritance, polymorphism, and encapsulation with practical examples...
+            </p>
+            <div class="blog-read-more">
+              <a href="blog-post-2.html" class="read-more-btn">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-post-card" data-category="design">
+          <div class="blog-post-image">
+            <img src="./images/react.png" alt="UI/UX Design"/>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-meta">
+              <span class="blog-date">March 5, 2026</span>
+              <span class="blog-category">UI/UX Design</span>
+            </div>
+            <h2><a href="blog-post-3.html">Principles of Effective User Interface Design</a></h2>
+            <p class="blog-excerpt">
+              Discover the core principles of UI design that make digital products intuitive and enjoyable to use. 
+              From typography to color theory to accessibility, learn what makes great design...
+            </p>
+            <div class="blog-read-more">
+              <a href="blog-post-3.html" class="read-more-btn">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 4 -->
+        <article class="blog-post-card" data-category="learning">
+          <div class="blog-post-image">
+            <img src="./images/intro-to-web.png" alt="Learning Path"/>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-meta">
+              <span class="blog-date">February 28, 2026</span>
+              <span class="blog-category">Learning</span>
+            </div>
+            <h2><a href="blog-post-4.html">My Journey from Student to Developer: Key Lessons Learned</a></h2>
+            <p class="blog-excerpt">
+              Reflecting on my journey in tech, I share the key lessons that helped me grow as a developer. 
+              From bootcamp to real-world projects, here's what I wish I knew earlier...
+            </p>
+            <div class="blog-read-more">
+              <a href="blog-post-4.html" class="read-more-btn">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 5 -->
+        <article class="blog-post-card" data-category="web">
+          <div class="blog-post-image">
+            <img src="./images/backend.png" alt="JavaScript Advanced"/>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-meta">
+              <span class="blog-date">February 20, 2026</span>
+              <span class="blog-category">Web Development</span>
+            </div>
+            <h2><a href="blog-post-5.html">Advanced JavaScript: Async/Await and Promises Explained</a></h2>
+            <p class="blog-excerpt">
+              Async/await has revolutionized how we write asynchronous JavaScript. Learn how to write cleaner, 
+              more readable async code and master promises like a pro...
+            </p>
+            <div class="blog-read-more">
+              <a href="blog-post-5.html" class="read-more-btn">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 6 -->
+        <article class="blog-post-card" data-category="design">
+          <div class="blog-post-image">
+            <img src="./images/react.png" alt="User Experience"/>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-meta">
+              <span class="blog-date">February 15, 2026</span>
+              <span class="blog-category">UI/UX Design</span>
+            </div>
+            <h2><a href="blog-post-6.html">Creating Accessible Web Applications for Everyone</a></h2>
+            <p class="blog-excerpt">
+              Accessibility is not a feature, it's a necessity. Learn how to build web applications that are 
+              usable by everyone, including people with disabilities...
+            </p>
+            <div class="blog-read-more">
+              <a href="blog-post-6.html" class="read-more-btn">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP (Optional) -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Subscribe to My Newsletter</h2>
+        <p>Get the latest posts delivered right to your inbox</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Blaise</h4>
+          <p>Software Developer & UI/UX Designer from Kigali, Rwanda.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="https://github.com/ReponseBlaise" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/blaise-mushimiyumukiza" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:mushimiyumukizab@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mushimiyumukiza Blaise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Blog specific styles -->
+  <style>
+    .blog-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    .blog-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .blog-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .blog-posts-section {
+      padding: 60px 8%;
+    }
+
+    .blog-filter {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .blog-filter-btn {
+      padding: 10px 20px;
+      border: 2px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .blog-filter-btn:hover,
+    .blog-filter-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .blog-posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .blog-post-card {
+      background: var(--card);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+    }
+
+    .blog-post-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .blog-post-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .blog-post-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-post-card:hover .blog-post-image img {
+      transform: scale(1.05);
+    }
+
+    .blog-post-content {
+      padding: 25px;
+    }
+
+    .blog-post-meta {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .blog-date {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    body.dark .blog-date {
+      color: #cbd5e1;
+    }
+
+    .blog-category {
+      background: rgba(82, 100, 126, 0.1);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .blog-post-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .blog-post-card h2 a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .blog-post-card h2 a:hover {
+      color: var(--accent);
+    }
+
+    .blog-excerpt {
+      font-size: 0.95rem;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    body.dark .blog-excerpt {
+      color: #cbd5e1;
+    }
+
+    .blog-read-more {
+      margin-top: 15px;
+    }
+
+    .read-more-btn {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+      color: var(--accent-light);
+      text-decoration: underline;
+    }
+
+    .newsletter {
+      background: linear-gradient(135deg, rgba(82, 100, 126, 0.1) 0%, rgba(100, 181, 246, 0.1) 100%);
+      padding: 60px 8%;
+      border-radius: 15px;
+      margin: 50px 8%;
+    }
+
+    .newsletter-content {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .newsletter-content h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .newsletter-content p {
+      color: #64748b;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    body.dark .newsletter-content p {
+      color: #cbd5e1;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .newsletter-form input {
+      padding: 12px 20px;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      background: var(--bg);
+      color: var(--text);
+      min-width: 250px;
+      transition: all 0.3s ease;
+    }
+
+    .newsletter-form input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(82, 100, 126, 0.1);
+    }
+
+    .newsletter-form button {
+      padding: 12px 30px;
+    }
+
+    @media (max-width: 768px) {
+      .blog-hero h1 {
+        font-size: 2rem;
+      }
+
+      .blog-posts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-filter {
+        flex-wrap: wrap;
+      }
+
+      .newsletter-form input {
+        min-width: 100%;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <script src="script.js"></script>
+  <script>
+    // Blog filter functionality
+    const blogFilterButtons = document.querySelectorAll('.blog-filter-btn');
+    const blogPostCards = document.querySelectorAll('.blog-post-card');
+
+    blogFilterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        blogFilterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        blogPostCards.forEach(card => {
+          if (filterValue === 'all') {
+            card.style.display = 'block';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else if (card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+
+    blogPostCards.forEach(card => {
+      card.style.opacity = '1';
+      card.style.transition = 'opacity 0.3s ease';
+    });
+
+    // Newsletter subscription
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = newsletterForm.querySelector('input[type="email"]').value;
+        console.log('Newsletter subscription:', email);
+        alert('Thank you for subscribing! You will receive updates in your inbox.');
+        newsletterForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>

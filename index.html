@@ -1,24 +1,1320 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <title>Learn - Get Started Today</title>
-  <meta name="description" content="Learn is a platform that offers free courses for everyone. Start learning today!" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mushimiyumukiza Blaise – software developer, UI/UX designer, and OpenStreetMap community mapper. Builds full-stack, mobile, and backend projects. Explore current GitHub work, skills, and experience."/>
+  <meta name="keywords" content="Software Developer, UI/UX Designer, Java, Spring Boot, Flutter, GitHub Portfolio, OpenStreetMap, GIS Mapping, Full-Stack Developer"/>
+  <meta name="author" content="Mushimiyumukiza Blaise"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Blaise | Software Developer & UI/UX Designer"/>
+  <meta property="og:description" content="Portfolio showcasing projects in Java, Web Development, and UI/UX Design"/>
+  <meta property="og:url" content="https://mushimiyumukizablaiseportifolio1.vercel.app/"/>
+  <meta property="og:type" content="website"/>
+  <title>Blaise | Full-Stack Developer & UI/UX Designer</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" type="image/png" href="./images/logo.png"/>
 </head>
 
 <body>
-  <!-- Navbar section -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- Hero section -->
+  <div class="cinema-intro" id="cinemaIntro" aria-hidden="true">
+    <div class="intro-vignette"></div>
+    <p class="intro-title">Blaise Mushimiyumukiza</p>
+    <p class="intro-sub">The Journey So Far</p>
+    <div class="intro-line"></div>
+    <p class="intro-tag">A Portfolio in Motion</p>
+  </div>
 
-  <!-- Coding journey section -->
+  <div class="ambient-orb orb-a"></div>
+  <div class="ambient-orb orb-b"></div>
+  <div class="ambient-orb orb-c"></div>
 
-  <!-- Footer section -->
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <img src="./images/logo.png" alt="Blaise Logo" class="logo"/>
+      
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <script src="./script.js"></script>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#designs">Designs</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#journey">My Journey</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <button id="modeToggle" class="mode-btn">🌙</button>
+    </div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hi, I'm <span> Blaise Mushimiyumukiza </span></h1>
+      <p class="hero-subtitle">
+        <span id="typewriter"></span><span class="typewriter-cursor" id="typewriterCursor"></span>
+      </p>
+      <div class="hero-pills" aria-label="Portfolio highlights">
+        <span>Recent GitHub work</span>
+        <span>Full-stack systems</span>
+        <span>Mobile + Web</span>
+        <span>Open mapping</span>
+        <span>Graphic design</span>
+      </div>
+      <p class="hero-description">
+        I build practical digital products across web, mobile, and backend systems — from the management platform I
+        ship at Preferred Contractors to open-data mapping with the OpenStreetMap Rwanda community. I recently
+        completed a full-stack internship at KLAB Rwanda, working on booking, workforce, and grocery platforms. My
+        stack spans React, TypeScript, Spring Boot, Node.js, Flutter, Java, and UI/UX design, plus graphic design
+        with Adobe Illustrator and After Effects.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm0 2v.4l8 5.33 8-5.33V7H4Zm16 9V9.8l-7.45 4.97a1 1 0 0 1-1.1 0L4 9.8V16h16Z"/>
+          </svg>
+          Get In Touch
+        </a>
+        <a href="https://drive.google.com/file/d/15Y-gOI-pjtklkWKuIDzQYlUG7JmsYrr-/view?usp=sharing"
+           target="_blank" class="btn btn-outline">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 12.59V3a1 1 0 0 1 1-1Zm-6 15a1 1 0 0 1 1 1v1h10v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/>
+          </svg>
+          Download CV
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/ReponseBlaise" target="_blank" title="GitHub">
+          <img src="./images/github-icon.svg" alt="GitHub" class="social-icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/mushimiyumukiza-blaise-943b163b0" target="_blank" title="LinkedIn">
+          <img src="./images/linkedin-icon.svg" alt="LinkedIn" class="social-icon"/>
+        </a>
+        <a href="mailto:mushimiyumukizab@gmail.com" title="Email">
+          <img src="./images/email-icon.svg" alt="Email" class="social-icon"/>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image hero-float">
+      <img src="./images/portifolio.JPG" alt="Blaise Profile" class="hero-img"/>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="hint-mouse"></span>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a8 8 0 0 0-4 14.9V19a1 1 0 0 0 1.45.9L12 18.7l2.55 1.2A1 1 0 0 0 16 19v-2.1A8 8 0 0 0 12 2Zm0 2a6 6 0 0 1 3.02 11.18 1 1 0 0 0-.52.87v1.38l-1.55-.73a1 1 0 0 0-.85 0l-1.55.73v-1.38a1 1 0 0 0-.52-.87A6 6 0 0 1 12 4Z"/></svg>
+          About Me
+        </span>
+        <h2>About Me</h2>
+        <p class="section-subtitle">Get to know who I am</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a Software Engineering student from Kigali, Rwanda, with expertise in full-stack development, 
+            mobile app development, and cloud solutions. With hands-on experience in Spring Boot, Node.js, Flutter, 
+            UI/UX design, and database management, I bring comprehensive technical expertise and creative 
+            thinking to every project.
+          </p>
+          
+          <p>
+            Currently working as an IT Support specialist while actively developing mobile and web applications.
+            I recently completed a Software Developer internship at KLAB Rwanda, building web and mobile products
+            like a property booking app, a workforce platform, and a grocery ordering app. At
+            Preferred Contractors I also built the company's management information system covering employees,
+            attendance, payroll, inventory, and projects. Outside work I'm a certified Open Street Mapper contributing
+            to open geospatial data with EcoMappers / OpenStreetMap Rwanda, and I create visual designs with Adobe
+            Illustrator and After Effects.
+          </p>
+
+          <div class="about-info">
+            <div class="info-item">
+              <strong>Location:</strong>
+              <span>Kigali, Rwanda</span>
+            </div>
+            <div class="info-item">
+              <strong>Email:</strong>
+              <span><a href="mailto:mushimiyumukizab@gmail.com">mushimiyumukizab@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+              <strong>LinkedIn:</strong>
+              <span><a href="https://www.linkedin.com/in/mushimiyumukiza-blaise-943b163b0" target="_blank">Mushimiyumukiza Blaise</a></span>
+            </div>
+            <div class="info-item">
+              <strong>Current Role:</strong>
+              <span>Full-Stack Developer | IT Support Specialist | OpenStreetMap Community Mapper</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="./images/portifolio.JPG" alt="Blaise" class="profile-img"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h5a2 2 0 0 1 1.4.58l1.98 1.98A2 2 0 0 0 15.8 6H18a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Zm2 0v12h12V8h-2.2a4 4 0 0 1-2.83-1.17L11.4 5.58A1 1 0 0 0 10.7 5H6Zm2.5 4.5h7a1 1 0 1 1 0 2h-7a1 1 0 1 1 0-2Zm0 3.5h5a1 1 0 1 1 0 2h-5a1 1 0 1 1 0-2Z"/></svg>
+          Skills
+        </span>
+        <h2>Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-content">
+        <div class="skills-visual">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Tailwind CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Figma & UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Responsive Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Java & Spring Boot</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Node.js & Express</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL & Databases</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 84%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL & MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 83%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">OOP & Design Patterns</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 86%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">REST APIs & Microservices</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Mobile Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Flutter & Dart</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Cross-Platform Apps</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Mobile UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">App Performance</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Graphic Design</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Adobe Illustrator</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Adobe After Effects</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Graphic Design & Branding</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Canva</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Other Skills</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Git & Version Control</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 76%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C & C++</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 72%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Docker Basics</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 68%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Power BI & Data Analytics</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">OpenStreetMap & GIS Mapping</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Supabase & Firebase</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">IT Support & Systems</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Problem Solving</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 89%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Team Collaboration</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./images/react.png" alt="UI/UX Design"/>
+            <h3>UI / UX Design</h3>
+            <p>Figma, Wireframing, Prototyping, Usability Testing, Responsive & Mobile Design</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="./images/backend.png" alt="Backend Development"/>
+            <h3>Backend Development</h3>
+            <p>Java, Spring Boot, Node.js, Express, SQL, Database Design, Microservices</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="./images/intro-to-web.png" alt="Web Development"/>
+            <h3>Web Development</h3>
+            <p>HTML5, CSS3, JavaScript, React, REST APIs, Full-Stack Solutions</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="./images/intro-to-web.png" alt="Mobile Development"/>
+            <h3>Mobile Development</h3>
+            <p>Flutter, Dart, Cross-Platform Apps, iOS & Android, Firebase Integration</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1000&auto=format&fit=crop&q=60" alt="Graphic Design"/>
+            <h3>Graphic Design</h3>
+            <p>Adobe Illustrator, Adobe After Effects, Logos, Branding, Motion & Visual Design</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://images.unsplash.com/photo-1584291527908-033f4d6542c8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEdJUyUyMGFuZCUyMGRhdGElMjBhbmFseXRpY3N8ZW58MHx8MHx8fDA%3D" alt="GIS & Data Analysis"/>
+            <h3>GIS & Data Analysis</h3>
+            <p>OpenStreetMap, GIS Mapping, Power BI, Jupyter, SQL & Data Analytics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL DESIGNS -->
+  <section id="designs" class="design-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8c.5.7.7 1.4.65 2.2A1.9 1.9 0 0 1 12 22Z"/><circle cx="8.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="12" cy="8" r=".5" fill="currentColor"/><circle cx="15.5" cy="11" r=".5" fill="currentColor"/></svg>
+          Visual Designs
+        </span>
+        <h2>Design Work & Creative Projects</h2>
+        <p class="section-subtitle">Shaping ideas into visuals — from logos to motion, crafted with Illustrator and After Effects</p>
+      </div>
+
+      <div class="design-grid stagger">
+        <div class="design-tile">
+          <div class="design-art" aria-hidden="true">
+            <span class="design-num">01</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <div class="design-info">
+            <span class="design-badge">Branding</span>
+            <h3>Logos & Identity</h3>
+            <p>Custom logos, brand marks, and full visual identity systems built in Adobe Illustrator.</p>
+          </div>
+        </div>
+
+        <div class="design-tile">
+          <div class="design-art" aria-hidden="true">
+            <span class="design-num">02</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <div class="design-info">
+            <span class="design-badge">Print</span>
+            <h3>Poster & Print Design</h3>
+            <p>Posters, flyers, and print layouts that balance typography, color, and composition.</p>
+          </div>
+        </div>
+
+        <div class="design-tile">
+          <div class="design-art" aria-hidden="true">
+            <span class="design-num">03</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+          </div>
+          <div class="design-info">
+            <span class="design-badge">Motion</span>
+            <h3>Motion Graphics</h3>
+            <p>Animated titles, logo reveals, and promo motion pieces crafted in Adobe After Effects.</p>
+          </div>
+        </div>
+
+        <div class="design-tile">
+          <div class="design-art" aria-hidden="true">
+            <span class="design-num">04</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+          </div>
+          <div class="design-info">
+            <span class="design-badge">Digital</span>
+            <h3>Social Media Design</h3>
+            <p>Engaging posts, stories, and campaign visuals tailored for every platform.</p>
+          </div>
+        </div>
+
+        <div class="design-tile">
+          <div class="design-art" aria-hidden="true">
+            <span class="design-num">05</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="design-info">
+            <span class="design-badge">Events</span>
+            <h3>Event & Album Art</h3>
+            <p>Event branding, album covers, and posters that capture the mood of the moment.</p>
+          </div>
+        </div>
+
+        <div class="design-tile">
+          <div class="design-art" aria-hidden="true">
+            <span class="design-num">06</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+          </div>
+          <div class="design-info">
+            <span class="design-badge">Illustration</span>
+            <h3>Digital Illustration</h3>
+            <p>Vector illustrations and visual storytelling with a bold, modern style.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="design-note">
+        Want to see more? <a href="#contact">Request my full design portfolio</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / TIMELINE -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a1 1 0 0 1 1 1v1.1A8 8 0 0 1 19.9 11H21a1 1 0 1 1 0 2h-1.1A8 8 0 0 1 13 19.9V21a1 1 0 1 1-2 0v-1.1A8 8 0 0 1 4.1 13H3a1 1 0 1 1 0-2h1.1A8 8 0 0 1 11 4.1V3a1 1 0 0 1 1-1Zm0 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+          Experience
+        </span>
+        <h2>Experience & Education</h2>
+        <p class="section-subtitle">My professional journey</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Software Developer Intern</h3>
+            <p class="timeline-company">KLAB Rwanda | Kigali, Rwanda</p>
+            <p class="timeline-date">Apr 2026 - Jul 2026</p>
+            <p class="timeline-description">
+              Full-stack software development across web, mobile, and backend on real client-facing products —
+              from booking platforms to workforce and grocery systems.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Built HafiProperties, a property booking web app (React, TypeScript, Vite, Prisma, PostgreSQL)</li>
+              <li>Contributed to HangaWorks SEWI-Platform, a workforce LMS / job marketplace / ATS (NestJS, Prisma, PostgreSQL, React)</li>
+              <li>Built Push Grocely, a grocery ordering mobile app (Expo, React Native, WatermelonDB, TypeScript)</li>
+              <li>Produced sprint plans, architecture documentation, and an engineering logbook</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>IT Support Specialist</h3>
+            <p class="timeline-company">Preferred Contractors Ltd. | Kigali, Rwanda</p>
+            <p class="timeline-date">2024 - Present</p>
+            <p class="timeline-description">
+              Provide technical support to end-users, manage IT infrastructure, troubleshoot system issues, 
+              and document solutions. Collaborate with teams to ensure smooth IT operations.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Built the company MIS (React, Express, Supabase) covering employees, attendance, payroll, inventory, expenses, and projects with role-based access, live dashboards, and Excel/PDF reporting</li>
+              <li>Resolved 100+ technical issues with 90%+ first-contact resolution rate</li>
+              <li>Implemented system optimization strategies reducing downtime by 40%</li>
+              <li>Applied Java and SQL to automate routine backend operations and reporting tasks</li>
+              <li>Created comprehensive IT documentation and user guides</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Site Administrator</h3>
+            <p class="timeline-company">Preferred Contractors Ltd. | Kigali, Rwanda</p>
+            <p class="timeline-date">Nov 2022 - Dec 2023</p>
+            <p class="timeline-description">
+              Managed on-site administration, coordination, and documentation for company projects while
+              strengthening professional skills in a real working environment.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Coordinated project documentation and digital records</li>
+              <li>Supported data entry, reporting, and daily site administration</li>
+              <li>Sharpened problem-solving, time management, and communication</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Graphic Designer</h3>
+            <p class="timeline-company">MJF Quality Design Ltd | Kigali, Rwanda</p>
+            <p class="timeline-date">Aug 2022 - Nov 2022</p>
+            <p class="timeline-description">
+              Design logos, branding, web graphics, and print materials, and create motion designs using Adobe
+              Illustrator and After Effects to deliver polished visual work for clients.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Created logos and brand identities that elevate client brands</li>
+              <li>Designed web, social, and print assets used in campaigns</li>
+              <li>Produced motion graphics and animated visuals with After Effects</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>OpenStreetMap Community Mapper</h3>
+            <p class="timeline-company">EcoMappers, OpenStreetMap Rwanda | Kigali, Rwanda</p>
+            <p class="timeline-date">2026 - Present</p>
+            <p class="timeline-description">
+              Certified Open Street Mapper contributing to open geospatial data that supports disaster response,
+              climate resilience, and urban planning across Rwanda.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Certified Open Street Mapper by EcoMappers / OpenStreetMap Rwanda (Feb 2026)</li>
+              <li>Contribute community mapping data for environmental and climate projects</li>
+              <li>Combine GIS skills with software development for data-driven solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Software Engineering</h3>
+            <p class="timeline-company">Adventist University of Central Africa | Kigali, Rwanda</p>
+            <p class="timeline-date">September 2023 - Present</p>
+            <p class="timeline-description">
+              Formal software engineering study focused on computer science fundamentals, full-stack development,
+              database design, and software architecture.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Built full-stack and backend projects across web, API, and mobile work</li>
+              <li>Applied database design, Java, JavaScript, and UI/UX concepts in practice</li>
+              <li>Kept iterating on real GitHub projects while studying software engineering</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Advanced Level (A2), Software Development</h3>
+            <p class="timeline-company">GSNDP Cyanika</p>
+            <p class="timeline-date">Jan 2019 - Aug 2022</p>
+            <p class="timeline-description">
+              Advanced secondary certificate in software development covering programming fundamentals and
+              computing, the foundation that first pointed me toward engineering.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Introduced to programming, algorithms, and computing concepts</li>
+              <li>Built early software projects that sparked my path into development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY JOURNEY (THE MOVIE) -->
+  <section id="journey" class="journey-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2.05v2.02a8 8 0 1 1-9 9H2c0 5.52 4.5 10 10 10a10 10 0 0 0 0-20h1Zm-2 4.95h2v5.76l3.54 3.54-1.42 1.42-4.12-4.12V7ZM19 7h2v6h-2V7Zm3 9h2v6h-2v-6Z"/></svg>
+          My Journey
+        </span>
+        <h2>The Story So Far</h2>
+        <p class="section-subtitle">A cinematic look at the path — from first design to shipping real products</p>
+      </div>
+
+      <div class="journey-track" aria-hidden="true">
+        <div class="journey-fill" id="journeyFill"></div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2022</div>
+          <span class="journey-badge">Act One — The Spark</span>
+          <div class="journey-panel">
+            <h3>Graphic Design</h3>
+            <p class="journey-role">Graphic Designer · MJF Quality Design Ltd</p>
+            <p>
+              The journey starts in the design studio — Adobe Illustrator and After Effects in hand, learning to
+              shape ideas into visuals. It's where I fell in love with creating things people can see and feel.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2023</div>
+          <span class="journey-badge">Act Two — The Foundation</span>
+          <div class="journey-panel">
+            <h3>Software Engineering</h3>
+            <p class="journey-role">Student · AUCA, Kigali</p>
+            <p>
+              I step from pixels into code. Computer science fundamentals, full-stack development, and database
+              design turn curiosity into a real engineering foundation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2024</div>
+          <span class="journey-badge">Act Three — The Builder</span>
+          <div class="journey-panel">
+            <h3>Building Real Systems</h3>
+            <p class="journey-role">IT Support Specialist · Preferred Contractors</p>
+            <p>
+              I join Preferred Contractors as IT Support and build the company's management information system —
+              employees, attendance, payroll, inventory, and projects all running on software I designed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2025</div>
+          <span class="journey-badge">Act Four — Shipping</span>
+          <div class="journey-panel">
+            <h3>Shipping Products</h3>
+            <p class="journey-role">Full-Stack & Mobile Developer</p>
+            <p>
+              A wave of projects goes live on GitHub — management systems, mobile apps, exam platforms, analytics —
+              web, mobile, and backend products shipped and refined in public.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2026</div>
+          <span class="journey-badge">Act Five — Mapping the World</span>
+          <div class="journey-panel">
+            <h3>OpenStreetMap Mapper</h3>
+            <p class="journey-role">Certified Open Street Mapper · EcoMappers / OSM Rwanda</p>
+            <p>
+              I take my skills outside the screen, mapping real communities with OpenStreetMap Rwanda. A certified
+              Open Street Mapper contributing open geospatial data to the world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">Now</div>
+          <span class="journey-badge">Final Act — Your Turn</span>
+          <div class="journey-panel">
+            <h3>Keep Watching</h3>
+            <p class="journey-role">Software Developer · Kigali, Rwanda</p>
+            <p>
+              The movie isn't over. Design, code, and mapping come together as I keep building — and the next
+              chapter could be built with you. Let's write it together.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-stats stagger">
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="4">0</span>+</div>
+          <div class="stat-label">Years Combined</div>
+        </div>
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="12">0</span>+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="3">0</span>+</div>
+          <div class="stat-label">Professional Roles</div>
+        </div>
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="1">0</span>+</div>
+          <div class="stat-label">Open Mapping Cert</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h3.6a2 2 0 0 1 1.6.8L12 6h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm2 0v12h14V8h-7.5a2 2 0 0 1-1.6-.8L9.4 5H5Zm2.5 7.5a1 1 0 0 1 1 1V15a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1Zm4-2a1 1 0 0 1 1 1V15a1 1 0 1 1-2 0v-3.5a1 1 0 0 1 1-1Zm4-2a1 1 0 0 1 1 1V15a1 1 0 1 1-2 0V9.5a1 1 0 0 1 1-1Z"/></svg>
+          Projects
+        </span>
+          <h2>Recent GitHub Work</h2>
+          <p class="section-subtitle">A live snapshot of the projects I’m currently shipping and refining</p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v3H3V6a1 1 0 0 1 1-1Zm-1 6h18v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-7Zm5 2a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"/></svg>All Projects</button>
+        <button class="filter-btn" data-filter="web"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v8h16V7H4Zm6 11h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2Z"/></svg>Web Development</button>
+        <button class="filter-btn" data-filter="backend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c4.97 0 9 2.24 9 5v10c0 2.76-4.03 5-9 5s-9-2.24-9-5V7c0-2.76 4.03-5 9-5Zm0 2C8.13 4 5 5.79 5 7s3.13 3 7 3 7-1.79 7-3-3.13-3-7-3Zm0 6c-3.87 0-7-1.79-7-3v3c0 1.21 3.13 3 7 3s7-1.79 7-3V7c0 1.21-3.13 3-7 3Zm0 5c-3.87 0-7-1.79-7-3v3c0 1.21 3.13 3 7 3s7-1.79 7-3v-3c0 1.21-3.13 3-7 3Z"/></svg>Backend / APIs</button>
+        <button class="filter-btn" data-filter="mobile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h8V4H8Zm3 13h2a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2Z"/></svg>Mobile Apps</button>
+        <button class="filter-btn" data-filter="database"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4.42 0 8 1.34 8 3s-3.58 3-8 3-8-1.34-8-3 3.58-3 8-3Zm-8 6c0 1.66 3.58 3 8 3s8-1.34 8-3v3c0 1.66-3.58 3-8 3s-8-1.34-8-3V9Zm0 6c0 1.66 3.58 3 8 3s8-1.34 8-3v3c0 1.66-3.58 3-8 3s-8-1.34-8-3v-3Z"/></svg>Database</button>
+        <button class="filter-btn" data-filter="design"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9v5a3 3 0 0 0 3 3h1v-7H5V11a7 7 0 1 1 14 0v1h-2v7h1a3 3 0 0 0 3-3v-5a9 9 0 0 0-9-9Zm-4 9h2v7H8a1 1 0 0 1-1-1v-6Zm6 0h2v6a1 1 0 0 1-1 1h-1v-7Z"/></svg>UI/UX</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Team working on Hanga Works"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Hanga-Works" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Hanga-Works</h3>
+            <p class="project-description">
+              A skills, employment, and workforce intelligence platform with learner, employer, institution, mentor,
+              and admin flows, plus courses, jobs, certifications, mentorship, analytics, and dashboards.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">NestJS</span>
+              <span class="tech-tag">React</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Hanga-Works" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80" alt="Backend code for AirBNB API"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/AirBNB_API" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AirBNB API</h3>
+            <p class="project-description">
+              An Express + TypeScript backend API with authentication, users, listings, bookings, reviews, uploads,
+              Swagger docs, and AI-assisted search and description generation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Groq AI</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/AirBNB_API" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Booking UI interface"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/BookingUI" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>BookingUI</h3>
+            <p class="project-description">
+              An Airbnb-style booking interface with home, explore, dashboard, booking form, host tools, admin views,
+              map previews, notifications, and AI chat support.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/BookingUI" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-image">
+            <img src="./images/backend.png" alt="Restaurant management system"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/RestaurantMIS_SpringBoot_RestfullAPI" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Restaurant Management System</h3>
+            <p class="project-description">
+              A Spring Boot RESTful API for restaurant operations with role-based access, menu management, order
+              processing, receipts, and database relationships.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Java 21</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/RestaurantMIS_SpringBoot_RestfullAPI" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80" alt="HafiHub marketplace"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/HafiHub" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>HafiHub</h3>
+            <p class="project-description">
+              A local economic marketplace for Rwanda with posts, events, news, event booking flows, and full-stack
+              React + Express implementation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/HafiHub" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Personal finance app"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Personal-Finance" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Personal Finance</h3>
+            <p class="project-description">
+              A full-stack finance tracker with JWT authentication, transaction management, balance summaries, and a
+              clean dashboard built with strict TypeScript.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Personal-Finance" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Preferred Contractors management dashboard"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Preferedmis" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Preferred Contractors MIS</h3>
+            <p class="project-description">
+              The management information system I built for Preferred Contractors Ltd — employee, attendance, payroll,
+              inventory, expense, and project management with role-based access, live dashboards, and Excel/PDF reports.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Preferedmis" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" alt="Movie streaming platform"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Movie-SYstem" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Movie System</h3>
+            <p class="project-description">
+              A full-stack movie streaming platform with authentication, movie and review management, subscriptions,
+              payments, and watch-history tracking.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Movie-SYstem" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=1200&q=80" alt="Secondary national exam portal"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/SecondaryNationalexam" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Secondary National Exam</h3>
+            <p class="project-description">
+              A full-stack PHP application for managing secondary national exam records with login/signup, CRUD
+              operations, and reporting screens.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">CRUD</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/SecondaryNationalexam" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80" alt="Android authentication app"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Preferred-System" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Preferred Android App</h3>
+            <p class="project-description">
+              An Android application with login, signup, and user-profile flows built with Java and Kotlin in Android
+              Studio.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Kotlin</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Preferred-System" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="database">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Uber fares data analysis dashboard"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/-Uber-Fares-Dataset-Analysis-using-Power-BI" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Uber Fares Analysis</h3>
+            <p class="project-description">
+              An end-to-end data analysis of Uber fare datasets using Power BI and Python, exploring pricing patterns,
+              trip distributions, and fare trends.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/-Uber-Fares-Dataset-Analysis-using-Power-BI" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="database">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Big data analysis"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/ReponseBlaise-Introduction-to-big-data-capstone-project-26229-Blaise" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Big Data Capstone</h3>
+            <p class="project-description">
+              A capstone project applying big-data fundamentals, notebooks, and analytics pipelines to a real dataset.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Jupyter</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Big Data</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/ReponseBlaise-Introduction-to-big-data-capstone-project-26229-Blaise" target="_blank" class="project-btn">Open repository</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <a href="https://github.com/ReponseBlaise?tab=repositories" target="_blank" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.66c-2.78.61-3.37-1.18-3.37-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.99 1.04-2.69-.1-.26-.45-1.29.1-2.69 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.9-1.3 2.74-1.03 2.74-1.03.55 1.4.21 2.43.1 2.69.65.7 1.04 1.6 1.04 2.69 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.87v2.77c0 .26.18.57.69.48A10 10 0 0 0 12 2Z"/>
+          </svg>
+          See all repositories on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Testimonials</h2>
+        <p class="section-subtitle">What others say about working with me</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+           
+            <div>
+              <h4>Murwanashyaka Damien</h4>
+              <p>CEO at Ultimate Developers</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Blaise is an exceptional developer who consistently delivers high-quality work. 
+            His attention to detail and problem-solving skills are outstanding. Highly recommended!"
+          </p>
+          <div class="testimonial-rating">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+           
+            <div>
+              <h4>Ngenzi Kelvin</h4>
+              <p>Network Admin At HomeGward Technologies</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Working with Blaise on UI/UX projects was fantastic. He brings both technical expertise 
+            and creative thinking, making him a valuable asset to any team."
+          </p>
+          <div class="testimonial-rating">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            
+            <div>
+              <h4>Kayitare Prince</h4>
+              <p>Developer at Preferred Contractors ltd</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Blaise's full-stack capabilities are impressive. He writes clean code, communicates well, 
+            and is always eager to learn. A true professional."
+          </p>
+          <div class="testimonial-rating">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Let's work together on something amazing</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4>Email</h4>
+            <p><a href="mailto:mushimiyumukizab@gmail.com">mushimiyumukizab@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <h4>Location</h4>
+            <p>Kigali, Rwanda</p>
+          </div>
+          <div class="contact-item">
+            <h4>Connect With Me</h4>
+            <div class="social-links-large">
+              <a href="https://github.com/ReponseBlaise" target="_blank">
+                <img src="./images/github-icon.svg" alt="" aria-hidden="true" class="social-link-icon"/>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/mushimiyumukiza-blaise-943b163b0" target="_blank">
+                <img src="./images/linkedin-icon.svg" alt="" aria-hidden="true" class="social-link-icon"/>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:mushimiyumukizab@gmail.com">
+                <img src="./images/email-icon.svg" alt="" aria-hidden="true" class="social-link-icon"/>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+            <span class="error-message" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <span class="form-message" id="formMessage"></span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Blaise</h4>
+          <p>Software Developer, UI/UX & Graphic Designer from Kigali, Rwanda.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#designs">Designs</a></li>
+            <li><a href="#journey">My Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow</h4>
+          <ul>
+            <li>
+              <a href="https://github.com/ReponseBlaise" target="_blank">
+                <img src="./images/github-icon.svg" alt="" aria-hidden="true" class="social-link-icon"/>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/blaise-mushimiyumukiza" target="_blank">
+                <img src="./images/linkedin-icon.svg" alt="" aria-hidden="true" class="social-link-icon"/>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mushimiyumukizab@gmail.com">
+                <img src="./images/email-icon.svg" alt="" aria-hidden="true" class="social-link-icon"/>
+                <span>Email</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mushimiyumukiza Blaise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for project details (optional) -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div id="modalTech"></div>
+      <a id="modalLink" target="_blank" class="btn btn-primary">View Project</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
