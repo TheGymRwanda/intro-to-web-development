@@ -17,6 +17,20 @@
 </head>
 
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="cinema-intro" id="cinemaIntro" aria-hidden="true">
+    <div class="intro-vignette"></div>
+    <p class="intro-title">Blaise Mushimiyumukiza</p>
+    <p class="intro-sub">The Journey So Far</p>
+    <div class="intro-line"></div>
+    <p class="intro-tag">A Portfolio in Motion</p>
+  </div>
+
+  <div class="ambient-orb orb-a"></div>
+  <div class="ambient-orb orb-b"></div>
+  <div class="ambient-orb orb-c"></div>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-container">
@@ -34,6 +48,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#journey">My Journey</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -50,7 +65,7 @@
     <div class="hero-content">
       <h1>Hi, I'm <span> Blaise Mushimiyumukiza </span></h1>
       <p class="hero-subtitle">
-        Full-Stack Developer | Mobile Apps | UI/UX & Graphic Design
+        <span id="typewriter"></span><span class="typewriter-cursor" id="typewriterCursor"></span>
       </p>
       <div class="hero-pills" aria-label="Portfolio highlights">
         <span>Recent GitHub work</span>
@@ -95,8 +110,13 @@
       </div>
     </div>
 
-    <div class="hero-image">
+    <div class="hero-image hero-float">
       <img src="./images/portifolio.JPG" alt="Blaise Profile" class="hero-img"/>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="hint-mouse"></span>
+      Scroll
     </div>
   </section>
 
@@ -458,6 +478,139 @@
               <li>Kept iterating on real GitHub projects while studying software engineering</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY JOURNEY (THE MOVIE) -->
+  <section id="journey" class="journey-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2.05v2.02a8 8 0 1 1-9 9H2c0 5.52 4.5 10 10 10a10 10 0 0 0 0-20h1Zm-2 4.95h2v5.76l3.54 3.54-1.42 1.42-4.12-4.12V7ZM19 7h2v6h-2V7Zm3 9h2v6h-2v-6Z"/></svg>
+          My Journey
+        </span>
+        <h2>The Story So Far</h2>
+        <p class="section-subtitle">A cinematic look at the path — from first design to shipping real products</p>
+      </div>
+
+      <div class="journey-track" aria-hidden="true">
+        <div class="journey-fill" id="journeyFill"></div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2022</div>
+          <span class="journey-badge">Act One — The Spark</span>
+          <div class="journey-panel">
+            <h3>Graphic Design</h3>
+            <p class="journey-role">Graphic Designer · MJF Quality Design Ltd</p>
+            <p>
+              The journey starts in the design studio — Adobe Illustrator and After Effects in hand, learning to
+              shape ideas into visuals. It's where I fell in love with creating things people can see and feel.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2023</div>
+          <span class="journey-badge">Act Two — The Foundation</span>
+          <div class="journey-panel">
+            <h3>Software Engineering</h3>
+            <p class="journey-role">Student · AUCA, Kigali</p>
+            <p>
+              I step from pixels into code. Computer science fundamentals, full-stack development, and database
+              design turn curiosity into a real engineering foundation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2024</div>
+          <span class="journey-badge">Act Three — The Builder</span>
+          <div class="journey-panel">
+            <h3>Building Real Systems</h3>
+            <p class="journey-role">IT Support Specialist · Preferred Contractors</p>
+            <p>
+              I join Preferred Contractors as IT Support and build the company's management information system —
+              employees, attendance, payroll, inventory, and projects all running on software I designed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2025</div>
+          <span class="journey-badge">Act Four — Shipping</span>
+          <div class="journey-panel">
+            <h3>Shipping Products</h3>
+            <p class="journey-role">Full-Stack & Mobile Developer</p>
+            <p>
+              A wave of projects goes live on GitHub — management systems, mobile apps, exam platforms, analytics —
+              web, mobile, and backend products shipped and refined in public.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">2026</div>
+          <span class="journey-badge">Act Five — Mapping the World</span>
+          <div class="journey-panel">
+            <h3>OpenStreetMap Mapper</h3>
+            <p class="journey-role">Certified Open Street Mapper · EcoMappers / OSM Rwanda</p>
+            <p>
+              I take my skills outside the screen, mapping real communities with OpenStreetMap Rwanda. A certified
+              Open Street Mapper contributing open geospatial data to the world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-scene">
+        <span class="journey-dot" aria-hidden="true"></span>
+        <div class="journey-scene-inner">
+          <div class="journey-year">Now</div>
+          <span class="journey-badge">Final Act — Your Turn</span>
+          <div class="journey-panel">
+            <h3>Keep Watching</h3>
+            <p class="journey-role">Software Developer · Kigali, Rwanda</p>
+            <p>
+              The movie isn't over. Design, code, and mapping come together as I keep building — and the next
+              chapter could be built with you. Let's write it together.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-stats stagger">
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="4">0</span>+</div>
+          <div class="stat-label">Years Combined</div>
+        </div>
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="12">0</span>+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="3">0</span>+</div>
+          <div class="stat-label">Professional Roles</div>
+        </div>
+        <div class="journey-stat">
+          <div class="stat-value"><span class="counter" data-target="1">0</span>+</div>
+          <div class="stat-label">Open Mapping Cert</div>
         </div>
       </div>
     </div>
@@ -907,6 +1060,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#journey">My Journey</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="#contact">Contact</a></li>

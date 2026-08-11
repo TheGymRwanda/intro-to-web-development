@@ -383,3 +383,147 @@ formInputs.forEach(input => {
 
 // ===== INITIALIZE =====
 console.log('Portfolio loaded successfully!');
+
+// ===== CINEMA INTRO =====
+const cinemaIntro = document.getElementById('cinemaIntro');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const introSeen = sessionStorage.getItem('cinemaSeen');
+let typewriterStarted = false;
+let cinemaFinished = false;
+
+const finishCinema = () => {
+  if (cinemaFinished) return;
+  cinemaFinished = true;
+  if (cinemaIntro) cinemaIntro.classList.add('intro-hidden');
+  startTypewriter();
+};
+
+const startTypewriter = () => {
+  if (typewriterStarted) return;
+  typewriterStarted = true;
+
+  const el = document.getElementById('typewriter');
+  const cursor = document.getElementById('typewriterCursor');
+  if (!el) return;
+
+  const text = 'Full-Stack Developer | Mobile Apps | UI/UX & Graphic Design';
+
+  if (reduceMotion) {
+    el.textContent = text;
+    if (cursor) cursor.classList.add('cursor-done');
+    return;
+  }
+
+  let index = 0;
+  const speed = 42;
+  const type = () => {
+    if (index <= text.length) {
+      el.textContent = text.slice(0, index);
+      index++;
+      if (index <= text.length) {
+        setTimeout(type, speed);
+      } else if (cursor) {
+        cursor.classList.add('cursor-done');
+      }
+    }
+  };
+  setTimeout(type, 250);
+};
+
+if (cinemaIntro) {
+  if (introSeen || reduceMotion) {
+    finishCinema();
+  } else {
+    sessionStorage.setItem('cinemaSeen', '1');
+    setTimeout(() => {
+      cinemaIntro.classList.add('intro-out');
+      cinemaIntro.addEventListener('animationend', finishCinema);
+      setTimeout(finishCinema, 1200);
+    }, 2400);
+  }
+} else {
+  startTypewriter();
+}
+
+// ===== SCROLL PROGRESS BAR =====
+const scrollProgress = document.getElementById('scrollProgress');
+
+const updateScrollProgress = () => {
+  const doc = document.documentElement;
+  const scrollable = doc.scrollHeight - doc.clientHeight;
+  const ratio = scrollable > 0 ? window.scrollY / scrollable : 0;
+  if (scrollProgress) {
+    scrollProgress.style.width = (ratio * 100) + '%';
+  }
+
+  const journeySection = document.getElementById('journey');
+  const journeyFill = document.getElementById('journeyFill');
+  if (journeySection && journeyFill) {
+    const rect = journeySection.getBoundingClientRect();
+    const trigger = window.innerHeight * 0.5;
+    const progress = rect.height > 0
+      ? Math.min(Math.max((trigger - rect.top) / rect.height, 0), 1)
+      : 0;
+    journeyFill.style.height = (progress * 100) + '%';
+  }
+};
+
+window.addEventListener('scroll', updateScrollProgress, { passive: true });
+updateScrollProgress();
+
+// ===== SCROLL REVEAL ANIMATIONS =====
+document.querySelectorAll('.section-header').forEach(el => el.classList.add('reveal'));
+
+const aboutText = document.querySelector('.about-text');
+const aboutImage = document.querySelector('.about-image');
+if (aboutText) aboutText.classList.add('reveal-left');
+if (aboutImage) aboutImage.classList.add('reveal-right');
+
+const skillsVisual = document.querySelector('.skills-visual');
+const skillsGrid = document.querySelector('.skills-grid');
+if (skillsVisual) skillsVisual.classList.add('reveal-left');
+if (skillsGrid) skillsGrid.classList.add('reveal-right');
+
+const timelineEl = document.querySelector('.experience .timeline');
+const projectsGrid = document.getElementById('projectsGrid');
+const testimonialsGrid = document.querySelector('.testimonials-grid');
+const contactContent = document.querySelector('.contact-content');
+if (timelineEl) timelineEl.classList.add('reveal');
+if (projectsGrid) projectsGrid.classList.add('reveal-zoom');
+if (testimonialsGrid) testimonialsGrid.classList.add('reveal');
+if (contactContent) contactContent.classList.add('reveal');
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-zoom, .stagger, .journey-scene')
+  .forEach(el => revealObserver.observe(el));
+
+// ===== JOURNEY STAT COUNTERS =====
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    const duration = 1500;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(eased * target);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(tick);
+    counterObserver.unobserve(el);
+  });
+}, { threshold: 0.6 });
+
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
