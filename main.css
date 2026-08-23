@@ -2,6 +2,7 @@
 *,
 *::before,
 *::after {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -11,3 +12,440 @@
 }
 
 /* Write your code below this */
+/* Base styles */
+header {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header div {
+  width: full-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+/* Logo styles */
+header img {
+  height: 40px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+header img:hover {
+  /* The `transform: scale(1.05);` property scales the element by 1.05 times its original size.
+    This means the element's width and height are increased by 5% while maintaining its proportions.
+    The value `1.05` is a multiplier, not a unit like px or rem. */
+  transform: scale(1.05);
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0066cc;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  header div {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    gap: 1.5rem;
+  }
+  
+  header::before {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+/*Hero section*/
+
+.hero-section {
+  background-image: url(images/hero.png);
+  background-size: cover;
+  background-position: center;
+  height:500px;
+  display: flex;
+  flex-direction: column;/* Aligns items vertically */
+  justify-content: center;
+  padding: 0 4rem;
+  color: #fff;
+  position: relative;
+}
+
+.hero-section h2 {
+  color: black;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section p {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section button {
+  background-color: #386897;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+}
+
+.hero-section button:hover {
+  background-color: #245280;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+  .hero-section h2 {
+    color: #f10202;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .hero-section p {
+    color: #f10202;
+    font-weight: 900;
+  }
+}
+
+/* About Me Section Styling */
+.about-me-section {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 230px;
+  height: 4px;
+  background-color: #4B8B8B;
+  margin: 10px auto 0;
+}
+
+.about-content {
+  background-color: white;
+  padding: 10px;
+  
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me-section {
+      padding: 60px 0;
+  }
+  
+  .section-title {
+      font-size: 2rem;
+  }
+  
+  .about-content {
+      padding: 30px 20px;
+  }
+  
+  .about-text {
+      font-size: 1rem;
+  }
+}
+
+/* Coding Journey Section*/
+.Coding-journey-section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:#4B8B8B;
+  height: auto;
+  width: full-width;
+  margin: 0px auto;
+  padding: 0 100px;
+}
+
+.Coding-journey-section .title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  padding-top: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* Journey container */
+.journey-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+
+/* Journey cards */
+.journey-card {
+  flex: 1;
+  /*max-width: 350px;*/
+  background: hsl(0, 0%, 100%);
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+    /* border-top: 4px solid transparent; */
+}
+
+.journey-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific card colors
+.intro {
+  border-top-color: #3498db;
+}
+ */
+
+
+/* Card content styling */
+.journey-icon {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  object-fit: contain; /* Ensures images maintain aspect ratio */
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.journey-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgb(17, 16, 16);
+}
+
+.journey-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Responsive design */
+/* Tablet Styles (768px - 1023px) */
+@media (max-width: 1023px) {
+  .Coding-journey-section {
+    padding: 0 50px;
+    min-height: auto;
+  }
+  
+  .journey-container {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .journey-card {
+    flex: 1 1 calc(50% - 50px);
+    min-width: 300px;
+  }
+  
+  .journey-icon {
+    height: 180px;
+  }
+  
+  .title {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+  .Coding-journey-section {
+    padding: 0 20px;
+  }
+  
+  .journey-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .journey-card {
+    width: 100%;
+    flex: none;
+  }
+  
+  .journey-icon {
+    height: 160px;
+    margin: 0 auto 20px; /* Center images on mobile */
+    display: block;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    padding-top: 1.5rem;
+  }
+  
+  .journey-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .journey-description {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+  .Coding-journey-section {
+    padding: 0 15px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .journey-icon {
+    height: 140px;
+  }
+}
+
+/*  Footer section */
+.website-footer {
+  background-color: #252c2c;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.heart {
+  color: #4B8B8B;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin: 0 5px;
+  /* Applies a heartbeat animation to the element, repeating infinitely every 1.5 seconds */
+  animation: heartbeat 1.5s infinite;
+}
+
+/* Defines a keyframe animation named 'heartbeat' */
+@keyframes heartbeat {
+  0% { 
+    transform: scale(1); /* At the start, the element is at its original size */
+  }
+  25% { 
+    transform: scale(1.1); /* Scales the element to 110% of its original size */
+  }
+  50% { 
+    transform: scale(1); /* Returns the element to its original size */
+  }
+  75% { 
+    transform: scale(1.1); /* Scales the element to 110% of its original size again */
+  }
+  100% { 
+    transform: scale(1); /* Ends the animation with the element at its original size */
+  }
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .footer-text {
+      font-size: 1rem;
+  }
+  
+  .heart {
+      font-size: 1.1rem;
+  }
+}

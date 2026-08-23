@@ -5,20 +5,111 @@
   <meta charset="UTF-8" />
   <title>Learn - Get Started Today</title>
   <meta name="description" content="Learn is a platform that offers free courses for everyone. Start learning today!" />
+  <head>
+    <!-- Standard Favicons (Most Browsers) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- Fallback for Old Browsers (IE, etc.) -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <!-- Apple Touch Icon (iOS/Safari) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Android/Chrome Icons (PWA) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    
+    <!-- Optional: Web Manifest (PWA) -->
+    <link rel="manifest" href="images/site.webmanifest">
+    
+    <!-- Optional: Chrome Theme Color -->
+    <meta name="theme-color" content="#ffffff">
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="main.css"/>
 </head>
 
 <body>
-  <!-- Navbar section -->
+    <!-- Navbar section -->
+   <header>
+    <div>
+      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#goals">Goals</a></li>
+        </ul>
+      </nav>
+    </div>
+   </header>
+  <main>
 
-  <!-- Hero section -->
+    <!-- Hero section -->
+    <div class="hero-section">
+      <h2>Hello! <br/>I'm Victor Ushindi</h2>
+      <p>A Web Developer</p>
+      <a href="mailto:victoireushindi371@gmail.co"><button>Contact Me</button></a>
+    </div>
 
-  <!-- Coding journey section -->
+    <!-- About me section -->
+    <section class="about-me-section" id="about">
+      <div class="container">
+          <h1 class="section-title">About Me</h1>
+          <div class="about-content">
+              <p class="about-text">
+                  I'm a passionate web developer dedicated to creating engaging and user-friendly websites. 
+                  From the moment <br> I started coding, I knew I wanted to build digital experiences that people 
+                  love to use. I thrive on turning creative ideas into functional websites that make a difference.
+              </p>
+          </div>
+      </div>
+    </section>
 
-  <!-- Footer section -->
-
-  <script src="./script.js"></script>
+    <!-- Coding journey section -->
+    <section class="Coding-journey-section" id="journey">
+      <h2 class="title">Coding Journey</h2>
+      
+      <div class="journey-container">
+          <div class="journey-card intro">
+              <img src="images/intro-to-web.png" alt="Web Development" class="journey-icon">
+              <h2 class="journey-title">Intro To Web Development</h2>
+              <p class="journey-description">Learned how to build<br>Web Html Projects</p>
+          </div>
+          
+          <div class="journey-card react">
+              <img src="images/react.png" alt="React Development" class="journey-icon">
+              <h2 class="journey-title">React Development</h2>
+              <p class="journey-description">Learned how to build Single <br> Page Application</p>
+          </div>
+          
+          <div class="journey-card backend">
+              <img src="images/backend.png" alt="Backend Development" class="journey-icon">
+              <h2 class="journey-title">Back-end Development</h2>
+              <p class="journey-description">Learn how to build back-<br>end services</p>
+          </div>
+      </div>
+    </section>
+    <!-- About me section -->
+    <section class="about-me-section" id="goals">
+      <div class="container">
+          <h1 class="section-title">My goals</h1>
+          <div class="about-content">
+              <p class="about-text">
+                I aspire to mentor and support other aspiring developers, sharing the knowledge and experience I’ve gained along the way. <br> By fostering a collaborative and encouraging environment, I hope to help others achieve their own goals and grow in their careers. Building strong, supportive communities is important to me, as I believe we can achieve more together.
+              </p>
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer class="website-footer">
+    <!-- Footer section -->
+    <div class="footer-content">
+        <p class="footer-text">Website Made by <span class="heart">Victor</span> From DRC © <span id="current-year"></span></p>
+    </div>
+</footer>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>
